@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡练习</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+    <style>
+        .outer-box{
+            width: 808px;
+            margin: 100px auto;
+            border: red solid;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            /* filter: opacity(.5); */
+            /* position: relative; */
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            /* filter: opacity(.3); */
+        
+        }
+        .bc{
+            width: 0px;
+            height: 0px;
+            border-top: none;
+            border-left: 200px solid rgba(255, 255, 255, .5);
+            border-bottom: 200px rgba(0, 0, 0, 0) solid;
+            position: relative;
+            top: -200px;
+        }
+        .bc1{
+            position: relative;
+            top: -400px;
+            width: 0px;
+            height: 0px;
+            border-top: 200px rgba(0, 0, 0, 0) solid;
+            /* border-left: 200px yellowgreen solid; */
+            border-right: 200px   yellow solid;
+            /* border-bottom: 200px red solid; */
+        }
+        li:hover .bc{
+            border-bottom: none;
+            border-left:0px solid  rgba(255, 255, 255, .5);
+            border-bottom:0px solid  rgba(0, 0, 0, 0);
+           /* border-top: 200px; */
+           /* transform: translateY(200px); */
+           transition: .5s linear;
+        }
+        li:hover .bc1{
+            border-top:0px solid  rgba(255, 255, 255, .5);
+            border-right:0px solid  rgba(0, 0, 0, 0);
+           /* border-top: 200px; */
+           /* transform: translateY(-200px); */
+           /* transform: translateX(-200px); */
+           transition: .5s ;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <ul>
+            <li><img src="./img/9.21练习/6.jpg" alt="">
+            <div class="bc"></div>
+            <div class="bc1"></div>
+            </li>
+            <li><img src="./img/9.21练习/3.jpg" alt=""><div class="bc"></div></li>
+            <li><img src="./img/9.21练习/u=662591334,2201594783&fm=26&gp=0.jpg" alt=""><div class="bc"></div></li>
+            <li><img src="./img/9.21练习/8.jpg" alt=""><div class="bc"></div></li>
+            <li><img src="./img/9.21练习/6.jpg" alt=""><div class="bc"></div></li>
+            <li><img src="./img/9.21练习/3.jpg" alt=""><div class="bc"></div></li>
+            <li><img src="./img/9.21练习/u=662591334,2201594783&fm=26&gp=0.jpg" alt=""><div class="bc"></div></li>
+            <li><img src="./img/9.21练习/8.jpg" alt=""><div class="bc"></div></li>
+            
+        </ul>
+    </div>
+</body>
+</html>

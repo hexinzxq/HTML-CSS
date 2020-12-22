@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性容器样式</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+    <style>
+        ul{
+            width: 200px;
+            /* height: 200px */
+            background-color: #bfa;
+            display: flex;
+            /* flex-wrap: wrap-reverse; */
+            /* justify-content: space-between; */
+            align-items: stretch;
+            /* justify-content: center; */
+        }
+        li{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            text-align: center;
+            line-height: 100px;
+            flex-shrink:0;
+        }
+        li:nth-child(2){
+            background-color: red;
+        }
+        li:nth-child(3){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1
+            <div>1</div>
+        </li>
+        <li>2
+            <div>2</div>
+        </li>
+        <li>3
+            <div>3</div>
+            <div>3</div>
+        </li>
+    </ul>
+</body>
+</html>

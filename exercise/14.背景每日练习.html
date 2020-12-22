@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景每日练习</title>
+    <style>
+        .clearfix::before,
+        .clearfix:after{
+            content:'';
+            display: table;
+            clear: both;
+        }
+        .a1,.b1,.c1,.d1{
+            width: 360px;
+            height: 20px;
+            border-top: 2px solid black;
+            /* border-bottom: none;
+            border-left: none; */
+            margin-top: 178px;
+            background-color: rgba(99, 104, 98, .3);
+            text-align: center;
+            color: white;
+        }
+        .a,.b,.c,.d{
+            width: 360px;
+            height: 203px;
+            background-size: cover;
+            margin: 10px 0;
+        }
+        .a{
+            background-image: url("./背景每日练习相关截图/1.jpg");    
+        }
+        .a11,.b11,.c11,.d11,.e11{
+            height: 360px;
+            height: 20px;
+            position: relative;
+            left: -70px;
+        }
+       
+        .b{
+           
+            background-image: url("./背景每日练习相关截图/2.jpg");
+           
+            /* margin: 10px 0; */
+        }  
+        .c{
+            background-image: url("./背景每日练习相关截图/3.jpg");
+            /* margin: 10px 0; */
+        }
+        .d{
+            background-image: url("./背景每日练习相关截图/4.jpg");
+            position: relative;
+            left: 370px;
+            top: -640px;
+        }
+        .e{
+            width: 360px;height: 426px;
+            background-image: url("./背景每日练习相关截图/5.jpg");
+            position: relative;
+            left: 370px;
+            top: -640px;
+        }
+        .e1{
+            border-top: 2px solid black;
+            /* border-bottom: none;
+            border-left: none; */
+            margin-top: 400px;
+            background-color: rgba(99, 104, 98, .3);
+            text-align: center;
+            color: white;            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="a clearfix"><div class="a1"><div class="a11">燕赵遍地有古塔</div></div></div>
+    <div class="b clearfix"><div class="b1"><div class="b11">解读贵州岩画</div></div></div>
+    <div class="c clearfix"><div class="c1"><div class="c11">乾陵：天下第一陵</div></div></div>
+    <div class="d clearfix"><div class="d1"><div class="d11">磴口：正在上演的地址史诗</div></div></div>
+    <div class="e clearfix"><div class="e1"><div class="e11">大江寻源</div></div></div>
+</body>
+</html>

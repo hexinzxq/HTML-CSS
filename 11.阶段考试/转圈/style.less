@@ -1,0 +1,62 @@
+.outbox{
+    margin: 100px auto;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    overflow: hidden;
+    .box1{
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        margin: 50px auto;
+        border-radius: 50%;
+        overflow: hidden;
+        .box11{
+            height: 150px;
+            width: 150px;
+            border:10px solid #4DB6AC;
+            margin: 65px auto;
+            border-radius: 50%;
+            animation:a 2s linear infinite;
+            @keyframes a{
+                from{
+                    transform: rotateZ(0);
+                }
+                to{
+                    transform: rotateZ(360deg);
+                }
+            }
+
+            .box12{
+                height: 130px;
+                width: 130px;
+                border:10px solid #4DB6AC;
+                border-radius: 50%;
+                animation:b 2s linear infinite;
+                @keyframes b{
+                    from{
+                        transform: rotateZ(0);
+                    }
+                    to{
+                        transform: rotateZ(360deg);
+                    }
+                }
+                .box13{
+                    height: 110px;
+                    width: 110px;
+                    border:10px solid #4DB6AC;
+                    border-radius: 50%;
+                    animation:c 2s linear infinite;
+                    @keyframes c{
+                        from{
+                            transform: rotateZ(0);
+                        }
+                        to{
+                            transform: rotateZ(360deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements layers</title>
+    <style>
+        .box1,.box2,.box3{
+            font-size: 30px;
+            width: 200px;height: 200px;
+
+        }
+        .box1{
+           background-color:purple;
+            position: absolute;
+            z-index: 1;
+        }
+        .box2{
+           background-color:rgba(240, 10, 10, 0.6);
+            position: absolute;
+            left: 100px;top: 100px;
+            z-index: 2;
+        }
+        .box3{
+        background-color:rgba(83, 42, 197, 0.6);
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        z-index: 3;
+        }
+        .box4
+        {
+            width: 100px;height: 100px;background-color: blue;
+            top: 0;left: 0;bottom: 0;right: 0;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3
+        <div class="box4">4</div>
+    </div>
+</body>
+</html>

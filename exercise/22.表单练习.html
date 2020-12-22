@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .outer{
+            width: 600px;
+            height: 408px;
+            background-image: url("./表单img/bg.jpg");
+            margin: 100px auto;
+        }
+        .inbox{
+            width: 466px;
+            height: 366px;
+            border:1px solid rgba(0, 0, 0, .2) ;
+            background-color: rgba(231, 235, 239, .9);
+            margin: 8px auto;
+            border-radius: 10px;
+            /* position: relative; */
+        }
+        .inbox-1{
+            width: 144px;
+            height:50px;
+            margin-left:153px;
+            position: relative;
+            /* left: 100px; */
+        }
+        .inbox-1 .text{
+            margin-top:-40px;
+            margin-left: 70px;
+        }
+        .inbox-2{
+            width: 286px;
+            height: 249px;
+            margin-left: 90px;
+            margin-top: 13px;
+            overflow: auto;
+        }
+        /* 对滚动条的隐藏 */
+        .inbox-2::-webkit-scrollbar{
+            color: red;
+        }
+        .input-2 .intrest{
+            width: 232px;
+            height: 48px;
+            background-color: red;
+        }
+        .inbox-3{
+            width: 466px;
+            height: 43px;
+            border-top: 1px solid #c5c8cb;
+            position: relative;
+        }
+        .inbox31{
+            width: 144px;
+            height: 18px;
+            position: absolute;
+            top: 12px;
+            left: 171px;
+        }
+        .copyright{
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer clearfix">
+        <div class="inbox clearfix">
+           <div class="inbox-1"> <img src="./表单img/logo.png" alt="" width="50px">
+             <div class="text">用户注册</div> 
+            </div>
+            <div class="inbox-2">
+                用户名称：<input type="text" placeholder="请输入您的用户名!" class="inputbox"><br><br>
+                登录密码：<input type="password" placeholder="请输入您的密码!" class="inputbox"><br><br>
+                重复密码：<input type="password" placeholder="请输入您的确认密码!" class="inputbox"><br><br>
+                电子邮箱：<input type="email" placeholder="请输入您的邮箱!" class="inputbox"><br><br>
+                性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别:&nbsp;&nbsp;男<input type="radio" name="sex" value="a" checked>&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;女 <input type="radio" name="sex" value="a"><br><br>
+                &nbsp;&nbsp;职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：
+                <select name="学生" id="">
+                    <option value="">教师</option>
+                    <option value="" selected>学生</option>
+                    <option value="">医生</option>
+                    <option value="">程序猿</option>
+                    <option value="">产品经理</option>
+                </select><br><br>
+                爱好：<input type="text" value="书法  乐器  运动  编程" class="intrest">
+            </div>
+            <div class="inbox-3">
+                <div class="inbox31"><input type="button" value="注册">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="sex">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright&copy版权所有</div>
+    </div>
+</body>
+</html>

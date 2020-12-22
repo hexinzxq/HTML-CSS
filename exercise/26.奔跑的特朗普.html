@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 101px;
+            height: 113px;
+            background-image: url("/exercise/img/25/20200514133737774.png");
+            background-position: -42px -38px;
+            margin: 0 auto;
+            animation: tlp 0.5s steps(6) infinite;
+        }
+        .box2{
+            /* margin: 10px auto; */
+            position: relative;
+            top: -113px;
+            width: 101px;
+            height: 113px;
+            background-image: url("/exercise/img/25/20200514133737774.png");
+            background-position: -48px -140px;
+            animation: tlp2 0.5s steps(6) infinite;
+        }
+        .box3{
+            width: 101px;
+            height: 113px;
+            background-image: url("/exercise/img/25/20200514133737774.png");
+            background-position: -42px -243px;
+            animation: tlp3 0.5s steps(6) infinite;
+        }
+        .box4{
+            position: relative;
+            left: 300px;
+            top: -143px;
+            width: 101px;
+            height: 113px;
+            background-image: url("/exercise/img/25/20200514133737774.png");
+            background-position: -42px -38px;
+            animation: tlp4 0.1s steps(4) infinite;
+        }
+        @keyframes tlp{
+            from{
+                background-position: -42px -38px;
+            }
+            to{
+                background-position: -646px -38px;
+            }
+        }
+
+        @keyframes tlp2{
+            from{
+                background-position: -48px -140px;
+            }
+            to{
+                background-position: -646px -140px;
+            }
+        }
+        @keyframes tlp3{
+            from{
+                background-position: -42px -243px;
+            }
+            to{
+                background-position: -646px -243px;
+            }
+        }
+
+        @keyframes tlp4{
+            from{
+                background-position: -42px -38px;
+            }
+            to{
+                background-position: -42px -438px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

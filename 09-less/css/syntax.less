@@ -1,0 +1,19 @@
+body{
+    background-color: #bfa;
+}
+
+@a:400px;
+@v:#bfa;
+@s:.box2;
+.box1{
+    width: @a;
+    height: $width;
+    color: @v;
+}
+//作为类名或者一部分值时写法为@{变量名}
+@{s}{
+    width: @a;
+    background-image: url("@{s}/1.img");
+
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+    <style>
+        html {
+            background-color: silver;
+        }
+
+        .outer {
+            width: 800px;
+            height: 402px;
+            /* background-color: #bfa; */
+            margin: 100px auto;
+            border: 1px black solid;
+        }
+
+        .inner {
+            display: flex;
+            flex-wrap: wrap;
+            /* background-color: red; */
+
+
+        }
+        p img {
+            width: 200px;
+            height: 200px;
+            transition: 1s linear;
+            position: relative;
+            filter: opacity(.4);
+        }
+
+        .mask {
+            background: -webkit-linear-gradient(40deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+            transform: skewx(-25deg);
+            transition: all 1s ;
+            width: 30px;
+            height: 402px;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            margin: 100px auto;
+        }
+        .mask2{
+            background: -webkit-linear-gradient(40deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+            transform: skewx(-25deg);
+            transition: all 1s 0.2s;
+            width: 30px;
+            height: 402px;
+            position: absolute;
+            left: 0px;
+            top: 0;
+            margin: 100px auto;
+        }
+
+        .outer:hover .mask {
+            left: 1000px;
+        }
+        .outer:hover .mask2 {
+            left: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <p><img src="./img/9.21练习/2.jpg" alt=""></p>
+            <p><img src="./img/9.21练习/3.jpg" alt=""></p>
+            <p><img src="./img/9.21练习/4.jpg" alt=""></p>
+            <p><img src="./img/9.21练习/5.jpg" alt=""></p>
+            <p><img src="./img/9.21练习/6.jpg" alt=""></p>
+            <p><img src="./img/9.21练习/7.jpg" alt=""></p>
+            <p><img src="./img/9.21练习/8.jpg" alt=""></p>
+            <p><img src="./img/9.21练习/u=662591334,2201594783&fm=26&gp=0.jpg" alt=""></p>
+        </div>
+        <div class="mask"></div>
+        <div class="mask2"></div>
+    </div>
+</body>
+
+</html>

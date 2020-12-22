@@ -1,0 +1,82 @@
+// 设置网页视距
+html{
+    perspective: 1200px;
+}
+
+
+body{
+    background-color: #638303;
+}
+
+
+.w{
+    width: 358px;
+    height: 472px;
+    // background-color: #638303;
+}
+// 设置外框
+.outbox:extend(.w){
+    position: relative;
+    transform-style: preserve-3d;
+    
+    // transform-origin:0 0;
+    // transform: rotateZ(-45deg);
+    // transform: rotateY(45deg);
+    // transform: rotateZ(-20deg);
+    &:hover{
+        &{
+            transform: rotateX(45deg);
+            transition: 2s linear;
+
+        }
+        .box1{   
+            transform:  rotateY(-110deg);
+            box-shadow: 0px 0 50px white;
+            transition:2s linear;
+        }
+        .box2{
+            box-shadow: 0px 0 50px white;
+            transition: 2s linear;
+        }
+    }
+// 设置顶层图片
+margin:150px auto;
+.box1:extend(.w){
+    transform-origin:0 0;
+    // transform: translateZ(1px);
+    position: absolute;
+    background-image: url('../img/3d书本特效/bg.jpg');
+    background-position:-250px;
+    background-size: cover;  
+}  
+
+// 设置底层文字页
+.box2:extend(.w){
+    // transform: translateZ(-2px);
+    // position: absolute;
+    // transform:translateY(-472px);
+    background-color: #fff;
+    // 消除外边距重叠的问题
+    overflow: hidden;
+    h1{
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .intro-en{
+        font-size: 20px;
+        margin: 20px;
+        font-weight: bold;
+        margin-top: 30px;
+        line-height: 30px;
+    }
+    .trans{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-top: 30px;
+        line-height: 30px;
+    }
+}
+}

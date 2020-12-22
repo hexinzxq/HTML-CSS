@@ -1,0 +1,211 @@
+.navigation{
+    height: 39px;
+}
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 设置最外围容器 */
+.navigation {
+    width: 100%;
+    background-color: #E3E4E5;
+    border-bottom: 1px #ddd solid;
+    height: 30px;
+    /* 设置行高以使其水平居中，不设置高 */
+    line-height: 30px;
+}
+
+/* 设置内部容器样式 */
+.innav {
+    width: 1463px;
+    /* 使其水平居中 */
+    margin: 0 auto;
+    position: relative;
+}
+
+.innav a,
+.innav i,
+.innav span{
+    color: #999;
+    text-decoration: none;
+}
+.innav a:hover,
+.innav a.c1{
+    color: red;
+}
+
+.leftmenu {
+    float: left;
+}
+
+.location .fas{
+    color: #f10125;
+}
+.rightmenu{
+    float: right;
+}
+.rightmenu li{
+    float: left;
+}
+.rightmenu .line{
+    width: 1px;
+    height: 10px;
+    background-color: #999;
+    margin: 12px 12px 0;
+}
+
+
+/* 设置城市列表效果： */
+.leftmenu .citylist{
+    /* 设置隐藏 */
+    display: none;
+    width: 320px;
+    height: 436px;
+    background-color: white;
+    border: 1px solid rgb(204,204,204);
+    /* 设置绝对定位使其浮动不占页面位置 */
+    position: absolute;
+    top: 31px;
+    z-index: 99999;
+    /* 使用box-shadow设置阴影 */
+    box-shadow: 0 2px 2px rgba(0, 0,0, .2);
+}
+/* 当鼠标移入到该位置时，让citylist显示 */
+.leftmenu:hover .citylist{
+    display: block;
+}
+
+.location{
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    padding-bottom: 1px;
+
+    position: relative;
+    z-index:1;
+}
+
+/* 设置location移入时的效果 */
+.leftmenu:hover .location{
+    background-color: white;
+    border: 1px solid rgb(204,204,204);
+    border-bottom: none;
+}
+
+.index1:hover .myjd{
+    display: block;
+    position: absolute;
+    /* padding-top: 1px; */
+    z-index: 9998;
+}
+.index11{
+    padding: 0 10px;
+    border: 1px solid transparent;
+    /* border-bottom: none; */
+    padding-bottom: 1px;
+    position: relative;
+    z-index:9999;
+}
+
+.index1:hover .index11{
+    background-color: white;
+    border: 1px solid rgba(0, 0,0, .2);
+    border-bottom: none;
+    }
+
+
+    .index2 .service{
+        width: 215px;
+        height: 339px;
+        background-color: white;
+        border: 1px solid  rgb(204,204,204);
+        position: relative;
+        top: 31px;
+        box-shadow: 2px 2px 2px rgba(0, 0,0, .2);
+        display: none;
+        /* padding-top: 1px;*/
+        z-index: 9999; 
+    }
+    .index2:hover .service{
+        display: block;
+        position: absolute;
+    /* padding-top: 2px; */
+    z-index: 9998;
+    }
+    .index2:hover .index22{
+        background-color: #fff;
+        border: 1px solid rgba(0, 0,0, .2);
+        border-bottom: none;
+    }
+    .index22{
+        padding: 0 10px;
+        position: relative;
+        border: 1px solid transparent;
+        padding-bottom: 1px;
+        z-index: 9999;
+    }
+
+
+.website{
+    width: 230px;
+    height: 507px;
+    border: 1px solid rgb(204,204,204);
+    background-color: white;
+    position: relative;
+    top: 31px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    display: none;
+    z-index: 99999;
+}
+.index33{
+    padding: 0 10px;
+    position: relative;
+    border: 1px solid transparent;
+    padding-bottom: 1px;
+    z-index: 9999;
+}
+.index3:hover .index33{
+    background-color: #fff;
+    border: 1px solid rgba(0, 0,0, .2);
+    border-bottom: none;
+}
+.index3:hover .website{
+    display: block;
+    position: absolute;
+/* padding-top: 2px; */
+z-index: 9998;
+}
+
+
+.mobilejd{
+    width: 230px;
+    height: 507px;
+    border: 1px solid rgb(204,204,204);
+    background-color: white;
+    position: relative;
+    top: 31px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+    display: none;
+    z-index: 99999;
+}
+.index44{
+    padding: 0 10px;
+    position: relative;
+    border: 1px solid transparent;
+    padding-bottom: 1px;
+    z-index: 9999;
+}
+.index4:hover .index44{
+    background-color: #fff;
+    border: 1px solid rgba(0, 0,0, .2);
+    border-bottom: none;
+}
+.index4:hover .mobilejd{
+    display: block;
+    position: absolute;
+/* padding-top: 2px; */
+z-index: 9998;
+}

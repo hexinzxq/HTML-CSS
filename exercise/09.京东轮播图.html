@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+    <style>
+        .nav {
+            position: absolute;
+            width: 739px;
+            height: 588px;
+            
+            /* overflow: auto; */
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+        /* .box1,.box2,.box3,.box4,.box5,.box6,.box7 */
+        .nav div{ 
+            width: 739px;
+            height: 588px;
+            position: absolute;
+        }
+        .nav div:nth-child(7){
+            z-index: 1;
+        }
+        
+        /* 设置导航点的样式 */
+        .pointer {
+            position: absolute;
+            z-index: 9999;
+            bottom: 20px;
+            left: 40px;
+        }
+
+        .pointer a {
+            /* 设置元素向左浮动 */
+            float: left;
+            width: 10px;
+            height: 10px;
+            margin: 0px 2px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, .3);
+            /* 将背景颜色值设置到内容区，边框和内边距不在有背景颜色 */
+            background-clip: content-box;
+            border: 2px solid transparent;
+        }
+
+        .pointer a.active,
+        .pointer a:hover {
+            background-color: #fff;
+            border: 2px solid rgba(255, 255, 255, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        
+        <div class="box1"><a href="javascript:;"><img src="./09.轮播图材料/轮播图1.webp" width="739px"></a></div>
+       
+        <div class="box2"><img src="./09.轮播图材料/轮播图2.webp" width="739px"></div>
+       
+        <div class="box3"><img src="./09.轮播图材料/轮播图3.webp" width="739px"></div>
+        
+        <div class="box4"><img src="./09.轮播图材料/轮播图4.webp" width="739px"></div>
+     
+        <div class="box5"><img src="./09.轮播图材料/轮播图5.webp" width="739px"></div>
+        
+        <div class="box6"><img src="./09.轮播图材料/轮播图6.webp" width="739px"></div>
+       
+        <div class="box7"><a href="javascript:;"><img src="./09.轮播图材料/轮播图7.jpg" width="739px"></a></div>
+      
+        <p class="pointer">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </p>
+    </div>
+</body>
+
+</html>

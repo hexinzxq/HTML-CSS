@@ -1,0 +1,273 @@
+.bottombox{
+    height: 636px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+.inbox11{
+    width: 240px;
+    height: 590px;
+    background-color:white;
+    position: relative;
+    left: 206px;
+    top: 15px;
+}
+.inbox111{
+    width: 200px;
+    height: 554px;
+    /* background-color:red; */
+    position: absolute;
+    left: 21px;
+    top: 10px;
+    line-height: 30px;
+}
+
+.box1111 a{
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.inbox111 .box1111:hover{
+    background-color: #E9E9E9;
+}
+
+.inbox11 .inbox111 a:hover{
+    color: red;
+}
+
+.inbox12{
+    width: 736px;
+    height: 590px;
+    /* border: 1px black solid; */
+    position: absolute;
+    left: 456px;
+    top: 15px;
+}
+.nav {
+    position: absolute;
+    width: 739px;
+    height: 588px;
+    
+    /* overflow: auto; */
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+/* .box1,.box2,.box3,.box4,.box5,.box6,.box7 */
+.nav div{ 
+    width: 739px;
+    height: 588px;
+    position: absolute;
+}
+
+
+/* 通过调整数字来控制哪张图片应该显示 */
+.nav div:nth-child(7){
+    z-index: 1;
+}
+
+
+
+/* 设置导航点的样式 */
+.pointer {
+    position: absolute;
+    z-index: 9999;
+    bottom: 20px;
+    left: 40px;
+}
+
+.pointer a {
+    /* 设置元素向左浮动 */
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0px 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    /* 将背景颜色值设置到内容区，边框和内边距不在有背景颜色 */
+    background-clip: content-box;
+    border: 2px solid transparent;
+}
+
+.pointer a.active,
+.pointer a:hover {
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, .3);
+}
+
+
+
+.inbox13{
+    width: 238px;
+    height: 590px;
+    /* background-color: white; */
+    position: absolute;
+    left: 1207px;
+    top: 15px;
+}
+.inbox13 .inbox131{
+    margin: 14px 0;
+}
+
+.inbox14{
+    width: 237px;
+    height: 590px;
+    background-color: white;
+    position: absolute;
+    left: 1455px;
+    top: 15px;
+}
+.box141{
+    width: 237px;
+    height: 127px;
+    /* background-color: #bfa; */
+    /* position: absolute; */
+}
+.box1411{
+    position: absolute;
+    /* left: 1483px; */
+    top: 7px;
+    left: 25px;
+}
+.box1412{
+    width: 125px;
+    height: 54px;
+    /* border: 1px black solid; */
+    position: absolute;
+    top: 24px;
+    left: 105px;
+}
+.box1412 a{
+    color: #898989;
+    text-decoration: none;
+}
+.box1412 a:hover{
+    color: red;
+}
+.box1413{
+    width: 190px;
+    height: 43px;
+    /* border: 1px red solid; */
+    position: absolute;
+    left: 25px;
+    top: 77px;
+}
+.box1413 a{
+    text-decoration: none;
+}
+.box14131{
+    color: white;
+    width: 94px;
+    height: 43px;
+    /* border: 1px red solid; */
+    background-color: #e1251b;
+    text-align: center;
+    border-radius: 19px;
+}
+.box141311{
+    padding-top: 15px;
+}
+.box14132{
+    color: #c3b87e;
+    width: 94px;
+    height: 43px;
+    /* border: 1px red solid; */
+    position: absolute;
+    left: 106px;
+    top: 2px;
+    text-align: center;
+    background-color: #363634;
+    border-radius: 19px;
+    /* vertical-align: middle; */
+}
+.box141321{
+    padding-top: 15px;
+}
+
+
+
+.box142{
+    width: 237px;
+    height: 164px;
+    /* background-color: aqua; */
+}
+.box1421{
+    width: 207px;
+    height: 143px;
+    /* border: red solid 1px; */
+    position: absolute;
+    left: 13px;
+    top: 141px;
+}
+.box14211{
+    width: 201px;
+    height: 25px;
+    /* border: black solid 1px; */
+    position: absolute;
+    top: 5px;
+    font-weight:600;
+    font-size:20px;
+}
+.box14211 a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #999;
+}
+.box14211 a:hover{
+    color: red;
+}
+.box14212{
+    width: 201px;
+    height: 107px;
+    /* border: black solid 1px; */
+    position: absolute;
+    top: 30px;
+}
+.box14212 a{
+    text-decoration: none;
+    color: #999;
+}
+.box14212 a:hover{
+    color: red;
+}
+.box14212 .highlight{
+    color: red;
+    background-color: #fdeeed;
+}
+.box142121 div{
+    width: 43px;
+    height: 20px;
+    background-color: red;
+}
+
+
+
+.box143{
+    width: 237px;
+    height: 301px;
+    /* background-color: yellow; */
+}
+.box1431{
+    width: 220px;
+    height: 270px;
+    /* border: black solid 1px; */
+    position: absolute;
+    left: 14px;
+    top: 300px;
+    overflow: auto;
+    /* scrollbar-arrow-color: red; */
+}
+
+.box1431::-webkit-scrollbar{
+    color: tomato;
+}
+
+.box14312 a{
+    text-decoration: none;
+    color: #333333;
+}
+.box14312 a:hover{
+    color: red;
+}

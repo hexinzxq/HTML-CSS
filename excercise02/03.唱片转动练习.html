@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唱片</title>
+    <style>
+        .outer-box{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border-left: 10px #000000 solid;
+            /* background-color: #bfa; */
+        }
+        .dvd{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: url("./img/9.21练习/1.jpg");
+            background-size: 100%;
+            background-color: transparent;
+            animation: roll 3s infinite linear;
+        }
+        /* 设置唱片转动的关键帧 */
+        @keyframes roll{
+            from{
+               transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+        .dvd img{
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="dvd"></div>
+    </div>
+</body>
+</html>

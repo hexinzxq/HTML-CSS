@@ -1,0 +1,154 @@
+.midbox{
+    height: 178px;
+    position: relative;
+}
+.box21{
+    width: 238px;
+    height: 178px;
+    position: relative;
+    left: 207px;
+}
+.box211{
+    position: relative;
+    top: 30px;
+}
+
+.box22{
+    width: 943px;
+    height: 138px;
+    /* border: black solid 4px; */
+    position: absolute;
+    left: 473px;
+    top: 29px;
+}
+.box221{
+    width: 687px;
+    height: 49px;
+    /* border: black solid 1px; */
+    position: absolute;
+    left: 57px;
+}
+.box2211{
+    width: 688px;
+    height: 46px;
+    border: 2px solid #e2231a;;
+}
+.searchbox{
+    width: 70px;
+    height: 46px;
+    /* line-height: 138px; */
+    border: none;
+    background-color: #e1251b;
+    position: relative;
+    /* top: px; */
+    float: right;
+    text-align: center;
+    clear: both;
+
+}
+.searchbox i{
+    line-height: 46px;
+    color:white;
+    font-size: 25px;
+}
+.inputbox{  
+     width: 555px;
+     height: 30px;
+     line-height: 100%;
+     border: none;
+     outline: none;
+     position: absolute;
+     top: 8px;
+     left: 30px;
+     font-size: 12px;
+}
+
+
+.box222{
+    width: 173px;
+    height: 46px;
+    border: #eee solid 1px;
+    position: absolute;
+    left: 760px;
+    text-align: center;
+}
+.box222 a{
+    text-decoration: none;
+    color: red;
+}
+.box222:hover{
+    border: red 1px solid;
+}
+.box2221{
+    line-height: 46px;
+    color: red;
+}
+.box2221 i{
+    font-size: 16px;
+}
+
+.box223{
+    width: 644px;
+    height: 31px;
+    /* border: tomato solid 1px; */
+    position: absolute;
+    top: 50px;
+    left: 57px;
+}
+.box2231 .box22311{
+   float: left;
+   line-height: 31px;
+}
+.box22311 a{
+    color: #999999;
+    text-decoration: none;
+    font-size: 16px;
+}
+.box22311 a:hover{
+    color: red;
+}
+
+.box224{
+    width: 931px;
+    height: 50px;
+    /* border: blue solid 1px; */
+    position: absolute;
+    top: 86px;
+
+}
+.box2241{
+    line-height:50px ;
+}
+.box2241 .box22411{
+    float: left;
+}
+.box22411 a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #333333;
+}
+
+.box22411 a.highlight{
+    color: red;
+}
+.box22411 a:hover{
+    color: red;
+}
+
+
+.box23{
+    width: 278px;
+    height: 138px;
+    /* border: red solid 4px; */
+    position: absolute;
+    left: 1415px;
+    top: 29px;
+}
+.box231{
+    width: 229px;
+    height: 104px;
+    position: absolute;
+    /* border: black solid 1px; */
+    left: 46px;
+}

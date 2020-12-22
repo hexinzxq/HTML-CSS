@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒简介</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+    <style>
+        .box1{
+            width: 600px;
+            /* height: 300px; */
+            background-color: #bfa;
+            display: flex;
+            text-align: center;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+        }
+        li{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+            line-height: 100px;
+            /* flex-shrink:1; */
+
+        }
+        li:nth-child(2){
+            background-color: orange;
+            /* flex-grow: 2; */
+        }
+        li:nth-child(3){
+            background-color: blue;
+            /* flex-grow: 3; */
+        }
+    </style>
+</head>
+<body>
+    <ul class="box1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

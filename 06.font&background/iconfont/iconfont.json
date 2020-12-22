@@ -1,0 +1,51 @@
+{
+  "id": "2053907",
+  "name": "icon1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7766738",
+      "name": "icon_dingtalk_line",
+      "font_class": "icon_dingtalk_line",
+      "unicode": "eb93",
+      "unicode_decimal": 60307
+    },
+    {
+      "icon_id": "7766748",
+      "name": "icon_horn",
+      "font_class": "icon_horn",
+      "unicode": "eb96",
+      "unicode_decimal": 60310
+    },
+    {
+      "icon_id": "7766764",
+      "name": "icon_left",
+      "font_class": "icon_left",
+      "unicode": "eb99",
+      "unicode_decimal": 60313
+    },
+    {
+      "icon_id": "7766765",
+      "name": "icon_next_arrow",
+      "font_class": "icon_next_arrow",
+      "unicode": "eb9a",
+      "unicode_decimal": 60314
+    },
+    {
+      "icon_id": "16909610",
+      "name": "2",
+      "font_class": "2",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "16910230",
+      "name": "12",
+      "font_class": "12",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}

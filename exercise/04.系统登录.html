@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../Layout/reset.css"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 900px;
+            height: 500px;
+            border: grey 1px solid;
+            margin: 20px;
+            background-color:turquoise;
+        }
+        .content1{
+            width: 346px;
+            height: 444px;
+            /* border:red 1px solid; */
+            margin: 25px 100px 100px 30px;
+            
+        }
+        .content2{
+            width: 450px;  
+            height: 444px;
+            /* border: red 1px solid; */
+            margin: -545px 20px 30px 400px;
+             }
+        .content4{
+            font-size: 40px;
+            width: 400px;
+            height: 100px;
+            /* border:black 1px solid; */
+            margin: 20px;
+        }
+        .content5{
+            width: 480px;
+            height:320px;
+            /* border: 1px red solid; */
+        }
+        .content6{
+            width:460px ;
+            height:250px ;
+            /* border: 1px blue solid; */
+            margin: 10px;
+        }
+        .content7{
+            width: 400px;
+            height:50px;
+            /* border: 1px red solid; */
+            margin: 25px;
+            font-size: 20px;
+        }
+        .content8{
+            width: 400px;
+            height:50px;
+            /* border: 1px red solid; */
+            margin: 25px;
+            font-size: 20px;
+        }
+        .content9{
+            width: 400px;
+            height:50px;
+            /* border: 1px red solid; */
+            margin: 25px;
+            font-size: 20px;
+        }
+        .content13{
+            /* border: red 1px solid; */
+            width: 480px;
+            height: 60px;
+        }
+        .content14{
+            width: 100px;
+            height: 30px;
+            border: 1px solid grey;
+            margin: 12px;
+            font-size: 20px;
+            background-color:rgb(237,237,237);
+        }
+        .content15{
+            width: 100px;
+            height: 30px;
+            border: 1px solid grey;
+            margin: -43px 10px 12px 180px;
+            font-size: 20px;
+            background-color:rgb(237,237,237);
+        }
+        .content16{
+            width: 100px;
+            height: 30px;
+            border: 1px solid grey;
+            margin: -43px 10px 12px 340px;
+            font-size: 20px;
+            background-color:rgb(237,237,237);
+        }
+        a:link { text-decoration: none;color: black}
+        a:hover{color:red}
+        a:active{color:blue}
+    </style>
+    <script>
+        window.onload = function(){
+            var reset = document.getElementById("reset");
+            var in1 = document.getElementById("in1");
+            var in2 = document.getElementById("in2");
+            reset.onclick = function(){
+                in1.value = "";
+                in2.value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="box1">
+        <div class="content1"><img src="./相关的截图/系统登录图1.jpg">
+        <div class="content3"></div>
+        </div>
+        <div class="content2">
+            <div class="content4"><img src="./相关的截图/系统登录图2.jpg">&nbsp&nbsp&nbsp系统登录<br>-----------------------</div>
+            <div class="content5">
+                 <!--用户名：<BR></BR>
+            密码：<BR></BR>
+        记住密码：-->
+        <div class="content6">
+            <div class="content7">
+                <div class="content10"><p>用户名：<input type="text" placeholder="请输入您的用户名！" id="in1"></p></div>
+            </div>
+            <div class="content8">
+                <div class="content11"><p>密码：<input type="password" placeholder="请输入您的密码！" id="in2"></p></div>
+            </div>
+            <div class="content9">
+                <p>
+                    <input type="checkbox">记住密码
+                </p>
+                <div class="content12"></div>
+            </div>
+            <div class="content13">
+                <div class="content14">
+                     &nbsp;&nbsp;&nbsp;&nbsp;
+<a class="button" href="javascript:;"><span>登录</span></a> 
+                </div>
+                <div class="content15">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="button" href="javascript:;" id="reset"><span>重置</span></a> 
+                </div>
+                <div class="content16">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="button" href="javascript:;"><span>注册</span></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</body>
+</html>

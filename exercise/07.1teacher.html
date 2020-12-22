@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+    <style>
+        /* 设置nav大小 */
+        .nav{
+            /* 设置宽度，高度，背景色 */
+            width:1210px;
+            height:48px;
+            background-color: #E8E7E3;
+            /* 设置使得水平居中 */
+            margin: 100px auto;
+        }
+
+
+        /* 设置nav中的li */
+        .nav li{
+            float :left;
+            /* 设置li的高度 */
+            height: 48px;
+            /* 将文字在父元素中垂直居中 */
+            line-height: 48px;
+            
+        }
+
+
+        /* 设置a的样式 */
+        .nav a{
+            /* 将a转换为块元素 */
+            display: block;
+            /* 去除下划线 */
+            text-decoration: none;
+            color: #777777;
+             font-size: 18px;
+             padding: 0 39px;
+        }
+        a:hover{
+            background-color: #3F3F3F;
+            color: #E8E7E3;
+        }
+    </style>
+</head>
+<body>
+    <!-- 创建导航条结构 -->
+    <ul class="nav">
+        <li><a href="javascript:;">HTML/CSS</a></li>
+        <li><a href="javascript:;">Browser Side</a></li>
+        <li><a href="javascript:;">Server Side</a></li>
+        <li><a href="javascript:;">Programming</a></li>
+        <li><a href="javascript:;">XML</a></li>
+        <li><a href="javascript:;">Web Building</a></li>
+        <li><a href="javascript:;">Reference</a></li>
+    </ul>
+
+</body>
+</html>

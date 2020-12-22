@@ -1,0 +1,36 @@
+/* .outbox,.topbox,.bottombox{
+    border: 1px solid black;
+} */
+
+.outbox{
+    width: 1898px;
+    height: 952px;
+    margin:200px auto;
+    /* position: relative; */
+}
+.topbox{
+    height: 101px;
+    background-color: #1482c1;
+    position: relative;       
+}
+.box11{
+    position: absolute;
+    left: 200px;
+    
+}
+
+
+
+.index1 .myjd{
+    width: 351px;
+    height: 201px;
+    background-color: white;
+    border: 1px solid  rgb(204,204,204);
+    display: none;
+    top: 31px;
+    position: relative;
+    z-index: 9999;
+    /* z-index: 1; */
+    /* 使用box-shadow设置阴影 */
+    box-shadow: 2px 2px 2px rgba(0, 0,0, .2);
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡片练习</title>
+    <link rel="stylesheet" href="../Layout/reset.css">
+    <link rel="stylesheet" href="../06.font&background/fa/css/all.css">
+    <style>
+        /* 外部容器样式 */
+        .outer{
+            width: 722px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            margin: 100px auto;
+        }
+
+        /* 设置导航部分样式 */
+        .nav-wraper{
+            height: 71px;
+        }
+        .nav-wraper .left{
+            float: left;
+            /* line-height: 71px; */
+            padding-top: 10px;
+            padding-left: 15px;
+            font-size: 20px; 
+            
+        }
+        .nav-wraper .left li{
+            float: left;
+            /* line-height: 71px; */
+        }
+        .nav-wraper .left li.text{
+            padding-top: 15px;
+        }
+        .nav-wraper .right{
+            float: right;
+            line-height: 71px;
+            padding-right:18px ;
+            font-size: 20px;
+        }
+
+
+        /* 图片部分样式 */
+        .imh-wraper{
+            height: 478px;
+        }
+
+        /* 小图标部分样式 */      
+        .third-wraper{
+            height: 51px;
+            position: relative;
+        }
+         /* 左侧小图标 */
+        .third-wraper .left li{
+            float: left;
+            line-height: 51px;
+            padding-left: 18px;
+            font-size: 25px;
+        }
+        /* 中间小圆点 */
+        .third-wraper .middle{
+            position: absolute;
+            z-index: 9999;
+            left:340px;
+            top: 17px;
+        }
+        .third-wraper .middle a{
+             /* 设置元素向左浮动 */
+            float: left;
+            width: 10px;
+            height: 10px;
+            margin: 0px 2px;
+            border-radius: 50%;
+            background-color:rgba(41, 13, 13, 0.719);
+            /* 将背景颜色值设置到内容区，边框和内边距不在有背景颜色 */
+            background-clip: content-box;
+            border: 2px solid transparent;
+        }
+        .middle a.active,
+        .middle a:hover {
+            background-color: #4ab4f8;
+            border: 2px solid rgba(45, 33, 116, 0.3);
+        }
+        
+        /* 右侧小图标 */
+        .third-wraper .right{
+            float: right;
+            line-height: 51px;
+            padding-right: 18px;
+            font-size: 25px;
+        }
+
+
+
+        /* 点赞评论部分样式 */
+        .fourth-wraper h2{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .fourth-wraper{
+            margin-left:20px ;
+            line-height: 28px;
+        }
+        .fourth-wraper ul>li:not(:nth-child(2)){
+            font-size: 18px;
+            font-weight: 600;
+
+        }
+        .fourth-wraper ul>li:nth-child(5){
+            font-size: 15px;
+            font-style: normal;
+            color: #909090 ;
+        }
+        .fourth-wraper li.comment{
+            color: #909090;
+            font-size: 20px;
+        }
+
+
+
+
+        /* 评论区样式 */
+        .bottom-wraper{
+            height: 65px;
+            border-top:1px solid #efefef
+        }
+        .bottom-wraper .input>li{
+            float: left;
+            line-height: 65px;
+            padding-left: 20px;   
+        }
+        .bottom-wraper .input>li input{
+            width: 630px;
+            height: 40px;
+            outline: none;
+            font-size: large;
+            border: none;
+        }
+        .bottom-wraper .text>li{
+            float: right;
+            line-height: 65px;
+            padding-right: 19px;
+        }
+        .bottom-wraper .text>li a{
+            text-decoration: none;
+            color: #5bafe4;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <!-- 导航部分 -->
+        <div class="nav-wraper">
+            <ul class="left">
+                <li><img src="./卡片练习截图/a.png" alt=""></li>
+                <li class="text">cristiano</li>
+            </ul>
+            <ul class="right">
+                <li><i class="fas fa-ellipsis-h"></i></li>
+            </ul>
+        </div>
+
+        <!-- 图片部分 -->
+        <div class="img-wraper">
+            <img src="./卡片练习截图/b.png" alt="">
+        </div>
+
+
+        <!-- 小图标部分 -->
+        <div class="third-wraper">
+            <ul class="left">
+                <li><i class="fas fa-heart"></i></li>
+                <li><i class="fas fa-comment-dots"></i></li>
+                <li><i class="fas fa-paper-plane"></i></li>
+            </ul>
+            <!-- 中间的选择点 -->
+            <p class="middle">
+                <a class="active" href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a>
+                <a href="javascript:;"></a></p>
+                <!-- 最右侧的小图标 -->
+            <ul class="right">
+                <li><i class="fas fa-file"></i></li>
+            </ul>
+        </div>
+
+
+        <!-- 评论点赞部分 -->
+        <div class="fourth-wraper">
+            <h2>624.6万 次赞</h2>
+            <ul>
+                <li>足球是我的最爱,足球很有趣很精彩，你值得一看，值得一玩...</li>
+                <li class="comment">全部4.1万条评论</li>
+                <li>nice <i class="fas fa-thumbs-up"></i>
+                    <i class="fas fa-thumbs-up"></i>
+                    <i class="fas fa-thumbs-up"></i>
+                </li>
+                <li>精彩！</li>
+                <li>4天前</li>
+            </ul>
+        </div>
+
+        
+        <!-- 评论区 -->
+        <div class="bottom-wraper">
+            <ul class="input">
+                <li> <input type="text" placeholder="添加评论..."></li>
+            </ul> 
+            <ul class="text">
+                <li><a href="javascript:;">发布</a> </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

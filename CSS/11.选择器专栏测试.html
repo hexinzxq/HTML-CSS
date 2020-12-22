@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对于选择器的测试</title>
+    <style>
+        div{
+            color: skyblue;
+        }
+        #fenge{
+            color: red;
+            background-color: skyblue;
+        }
+    </style>
+    <link rel="stylesheet" href="选择器测试.css">
+</head>
+<body>
+    <a target="blank" href="https://www.qq.com">①：这个链接测试超链接的伪类</a><BR></BR>
+    <a href="javascript:;">②：这个链接测试的也是超链接的伪类</a>
+
+    <div style="color: red; font-size: 20px;">这里测试内联样式</div>
+    <div>这是第二个div,测试内联样式表（元素选择器）
+        <BR></BR>
+        <p>我是div里面的p元素<BR></BR>
+            <span>我是这个p里面的span</span>
+        </p>
+        <span>(测试兄弟选择器)我是第三个div里面的span</span>
+    </div>
+    <div>这是第三个div,测试内联样式表</div>
+    <p>这是第一个p元素,测试外联样式表（也是一个元素选择器）</p>
+    <p>这是第二个p元素,测试外联样式表</p>
+    <p>这是第三个p元素,测试外联样式表<br>
+        <span>（测试关系选择器）我是p里面的span</span>
+    </p>
+    <p id="fenge">这里是分割区域(一个id选择器)：以下是对常用选择器的测试：</p>
+    <span class="purple">这个是第一个span元素(测试类选择器)</span><br>
+    <span class="white">(测试类选择器)这个是第二个span元素</span><br>
+    <span class="a">这个是第三个span元素</span><br>
+    <span class="b">这个是第四个span元素（测试复合选择器）</span><br>
+    <span class="c">这个是第五个span元素（测试复合选择器）
+        <span>我是span里面的span元素</span>
+    </span><br>
+    <span title="fgh">这是第七个span元素(属性选择器测试)</span><br>
+    <span title="fghjk">这是第八个span元素(属性选择器测试)</span><br>
+    <span title="zxc">这是第九个span元素(属性选择器测试)</span><br>
+    <span title="zcvb">这是第10个span元素(属性选择器测试)</span><br>
+    <span title="axcjk">这是第11个span元素(属性选择器测试)</span><br>
+    <ul>
+        <li>这是第一个li(伪类选择器测试)</li>
+        <li>这是第2个li(伪类选择器测试)</li>
+        <li>这是第3个li(伪类选择器测试)</li>
+        <li>这是第4个li(伪类选择器测试)</li>
+        <li>这是第5个li(伪类选择器测试)</li>
+    </ul>
+
+    <div style="float:left;">div text</div>
+    <p style="clear:left;">p text</p>
+
+</body>
+</html>

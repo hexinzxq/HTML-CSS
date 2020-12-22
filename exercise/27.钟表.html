@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钟表</title>
+    <style>
+        .clock{
+            width: 200px;
+            height: 200px;
+            /* background-color: #bfa; */
+            margin: 100px auto;
+            border-radius: 50%;
+            /* border: 5px red solid; */
+            position: relative;
+            background-image: url('/exercise/钟表/bg3.jpg');
+            background-size:cover;
+        }
+        .clock > div{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        /* 设置时针 */
+        .hour-wraper{
+            width: 60%;
+            height: 60%;
+            /* background-color: #bfa; */
+            animation: hour 216,000s infinite linear;
+        }
+        .hour-pin{
+            height: 50%;
+            width: 4px;
+            background-color: #000000;
+            /* position: absolute; */
+            margin: 0 auto;
+        }
+
+        /* 设置时针关键帧 */
+        @keyframes hour{
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);  
+            }
+        }
+
+        /* 设置分针 */
+        .min-wraper{
+            width: 70%;
+            height: 70%;
+            /* background-color: #bfa; */
+            animation: minite 3600s infinite linear;
+        }
+        .min{
+            height: 50%;
+            width: 3px;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+
+        /* 设置分针关键帧 */
+        @keyframes minite{
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);  
+            }
+        }
+
+        /* 设置秒针 */
+        .sec-wraper{
+            width: 80%;
+            height: 80%;
+            /* background-color: #bfa; */
+            animation:second 60s linear infinite;
+        }
+        .sec{
+            height: 50%;
+            width: 2px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+        /* 设置秒针关键帧 */
+        @keyframes second{
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);  
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour-wraper">
+            <div class="hour-pin"></div>
+        </div>
+        <div class="min-wraper">
+            <div class="min"></div>
+        </div>
+        <div class="sec-wraper">
+            <div class="sec"></div>
+        </div>
+    </div>
+</body>
+</html>

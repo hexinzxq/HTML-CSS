@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西游记</title>
+    <!-- 
+        设置网站的图标（在标题栏和收藏栏显示）
+        网站图片一般存储在网站的根目录下，名字一般叫做favicon.ico
+     -->
+     <link rel="icon" href="./favicon.ico">
+    <style>
+        .background{
+            width: 1920px;
+            height: 786px;
+            border: transparent;
+            background-image: url("./img/westtravel/bac.webp");
+            /* background-repeat: no-repeat; */
+            background:cover;
+            margin: 100px auto;
+            position: relative;
+            animation: bac 10s linear infinite;
+        }
+        .wukong{
+            width: 196px;
+            height: 180px;
+            background-image: url("./img/westtravel/west_01.png");
+            position: absolute;
+            top: 390px;
+            left: 500px;
+            animation: wukong 1.5s infinite steps(8);
+        }
+        .bajie{
+            width: 196px;
+            height: 180px;
+            background-image: url("./img/westtravel/west_02.png");
+            position: absolute;
+            top: 390px;
+            left: 700px;
+            animation: bajie 1.5s infinite steps(8);
+        }
+        .tangs{
+            width: 174px;
+            height: 239px;
+            background-image: url("./img/westtravel/west_03.png");
+            position: absolute;
+            top: 360px;
+            left: 900px;
+            animation: tangs 1.5s infinite steps(8);
+        }
+        .shas{
+            width: 196px;
+            height: 180px;
+            background-image: url("./img/westtravel/west_04.png");
+            position: absolute;
+            top: 390px;
+            left: 1100px;
+            animation: shas 1.5s infinite steps(8);
+        }
+        @keyframes bac{
+            from{
+                background-position:0 0;
+            }
+            to{
+                background-position: 1920px 0;
+            }
+        }
+        @keyframes wukong{
+            from{
+                background-position:0px 0px ;
+            }
+            to{
+                background-position: 1600px 0;
+            }
+        }
+        @keyframes bajie{
+            from{
+                background-position:0 0 ;
+            }
+            to{
+                background-position: 1600px 10px;
+            }
+        }
+        @keyframes tangs{
+            from{
+                background-position:0 0 ;
+            }
+            to{
+                background-position: 1360px 0;
+            }
+        }
+        @keyframes shas{
+            from{
+                background-position:0 0 ;
+            }
+            to{
+                background-position: 1680px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="wukong"></div>
+        <div class="bajie"></div>
+        <div class="tangs"></div>
+        <div class="shas"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+p{
+    background-color: greenyellow;
+    font-size: 30px;
+}
+.purple{
+    color: purple;
+    font-size: 20px;
+}
+.white{
+    color: red;
+}
+.a,.b,.c{
+    color: salmon;
+}
+.a .b .c{
+    color: sienna;
+}
+
+p>span{
+    color: chocolate;
+}
+div>p{
+    background-color: darkorange;
+}
+p~span{
+    color: lightseagreen;
+    font-size: 40px;
+}
+
+zx{
+   color: plum; 
+}
+
+span[title*=j]{
+    color: red;
+}
+
+ul>li:first-child{
+    color: red;
+    font-size: 30px;
+}
+ul>li:last-child{
+    background-color: plum;
+}
+ul>li:nth-child(2n){
+    font-size: 20px;
+}
+ul>li:nth-of-type(3){
+    color: blue;
+}
+ul>li:not(:nth-child(2n+1)){
+    color: blueviolet;
+}
+
+a:link{
+    color: springgreen;
+}
+a:visited{
+    color: violet;
+}
+a:hover{
+    font-size: 30px;
+    color: yellow;
+}
+
+a:active{
+    font-size: 60px;
+}
+
+p::first-letter{
+    font-size: 50px;
+}
+p::first-line{
+    font-size: 40px;
+}
+p::before{
+    content:"[" ;
+    font-size: 70px;
+}
+p::after{
+    content: "]";
+    font-size: 70px;
+}
